@@ -33,9 +33,9 @@
    </licenses>
 
    <scm>
-       <url>http://github.com/webjars/Flux</url>
-       <connection>scm:git:https://github.com/webjars/Flux.git</connection>
-       <developerConnection>scm:git:https://github.com/webjars/Flux.git</developerConnection>
+       <url>http://github.com/webjars/flux</url>
+       <connection>scm:git:https://github.com/webjars/flux.git</connection>
+       <developerConnection>scm:git:https://github.com/webjars/flux.git</developerConnection>
        <tag>HEAD</tag>
    </scm>
    
@@ -46,8 +46,7 @@
 		<destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs>
             {
-                "paths": { "Flux": "dist/Flux.js" },
-                "shim": { "Flux": [ "Flux" ] }
+                "paths": { "flux": "Flux" }
             }
         </requirejs>
     </properties>
@@ -70,7 +69,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/flux-${upstreamVersion}/" includes="dist/" />
+                                    <fileset dir="${project.build.directory}/flux-${upstreamVersion}/dist" />
                                 </move>
                             </target>
                         </configuration>
