@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>flux</artifactId>
-    <version>2.0.2</version>
+    <version>2.0.3-SNAPSHOT</version>
     <name>Facebook flux</name>
     <description>WebJar for Facebook flux</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
        <url>http://github.com/webjars/flux</url>
        <connection>scm:git:https://github.com/webjars/flux.git</connection>
        <developerConnection>scm:git:https://github.com/webjars/flux.git</developerConnection>
-       <tag>flux-2.0.2</tag>
+       <tag>HEAD</tag>
    </scm>
    
     <properties>
